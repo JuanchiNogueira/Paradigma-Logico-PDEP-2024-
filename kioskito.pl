@@ -70,11 +70,12 @@ personaSuertuda(Persona):-
   
   vendedora(Persona):-venta(Persona, _, _).
   
-  
 ventaImportante(golosinas(Precio)):-Precio > 100.
 ventaImportante(cigarrillos(Marcas)):-length(Marcas, Cantidad), Cantidad > 2.
 ventaImportante(bebidas(true, _)).
 ventaImportante(bebidas(_, Cantidad)):-Cantidad > 5.
+
+
 
 
 
